@@ -1,6 +1,5 @@
-# JRKG Bites
-
-**"Just the Right Kind of Grub"**
+-o- JRKG Bites -o-
+"Just the Right Kind of Grub"
 
 JRKGBites is an Android application designed to eliminate the indecision of choosing where to eat. It offers an interactive and personalized experience to help users find the perfect dining spot based on their cravings, mood, and preferences.
 
@@ -12,17 +11,17 @@ The project is built using Kotlin and follows a modern MVVM-like architecture (V
 
 --- Features ---
 
--   **Authentication:** Secure sign-up and login with email/password and biometric (fingerprint) options.
--   **Gesture-Based Interface:** An intuitive Tinder-style swipe system to manage your restaurant choices:
-    -   **Swipe Up:** Save a restaurant to your Favorites.
-    -   **Swipe Down:** Add a restaurant to your "Never Again" list.
-    -   **Swipe Left:** Discard for now.
-    -   **Swipe Right:** View restaurant details.
--   **Shake to Decide:** A "roulette" feature that randomly picks a restaurant for you when you shake your device.
--   **Location-Aware:** Filters restaurants based on your proximity, with options to see details and get directions via Google Maps.
--   **Comprehensive Search:** Easily search the entire restaurant database, including those you've previously dismissed.
--   **User Profile:** View your stats, manage preferences, and access app settings.
--   **Offline Capability:** Works with a local `JRKGBites.json` file, ensuring the app is functional even without an internet connection.
+-   Authentication: Secure sign-up and login with email/password and biometric (fingerprint) options.
+-   Gesture-Based Interface: An intuitive Tinder-style swipe system to manage your restaurant choices:
+    -   Swipe Up: Save a restaurant to your Favorites.
+    -   Swipe Down: Add a restaurant to your "Never Again" list.
+    -   Swipe Left: Discard for now.
+    -   Swipe Right: View restaurant details.
+-   Shake to Decide: A "roulette" feature that randomly picks a restaurant for you when you shake your device.
+-   Location-Aware: Filters restaurants based on your proximity, with options to see details and get directions via Google Maps.
+-   Comprehensive Search: Easily search the entire restaurant database, including those you've previously dismissed.
+-   User Profile: View your stats, manage preferences, and access app settings.
+-   Offline Capability: Works with a local `JRKGBites.json` file, ensuring the app is functional even without an internet connection.
 
 --- Built With ---
 
@@ -36,12 +35,12 @@ The project is built using Kotlin and follows a modern MVVM-like architecture (V
 
 To get a local copy up and running, follow these simple steps.
 
-### Prerequisites
+-- Prerequisites --
 
 -   Android Studio (latest stable version recommended)
 -   An Android device or emulator
 
-### Installation
+-- Installation -- 
 
 1.  Clone the repo
     git clone https://github.com/rdashnox/JRKGBites.git
@@ -53,16 +52,16 @@ To get a local copy up and running, follow these simple steps.
 
 The project is organized into four main layers, promoting a separation of concerns:
 
--   **`view`**: The UI layer, primarily handled in `MainActivity.kt`.
--   **`viewmodel`**: The `MainViewModel.kt` acts as the brain of the UI, managing state and handling user interactions.
--   **`domain`**: Contains the core business logic in manager classes like `SwipeManager`, `RestaurantPicker`, and `AuthManager`.
--   **`data`**: Manages all data sources, including the `RestaurantRepository` (for `JRKGBites.json`) and `UserPreferencesManager`.
+-   `view`: The UI layer, primarily handled in `MainActivity.kt`.
+-   `viewmodel`: The `MainViewModel.kt` acts as the brain of the UI, managing state and handling user interactions.
+-   `domain`: Contains the core business logic in manager classes like `SwipeManager`, `RestaurantPicker`, and `AuthManager`.
+-   `data`: Manages all data sources, including the `RestaurantRepository` (for `JRKGBites.json`) and `UserPreferencesManager`.
 
 --- Contact ---
 
-Product Owner - Ralph
-Scrum Master - Gracielle
-Developer - Krizia
-Developer - J.R
+- Product Owner = Ralph
+- Scrum Master = Gracielle
+- Developer = Krizia
+- Developer = J.R
 
-Project Link: [https://github.com/rdashnox/JRKGBites](https://github.com/rdashnox/JRKGBites)
+Project Link: https://github.com/rdashnox/JRKGBites
