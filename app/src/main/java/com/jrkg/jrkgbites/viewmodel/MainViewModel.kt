@@ -24,7 +24,7 @@ class MainViewModel(
 ) : ViewModel() {
 
     // --- Session Manager State ---
-    val sessionState: StateFlow<User?> = sessionManager.sessionState
+    val sessionState: Flow<User?> = sessionManager.sessionState
 
     // --- Auth Manager State ---
     private val _requiredAuthMethod = MutableStateFlow(authManager.getRequiredAuthMethod())

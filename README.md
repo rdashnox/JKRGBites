@@ -60,8 +60,8 @@ The project is organized into four main layers, promoting a separation of concer
 --- Contact ---
 
 - Product Owner = Ralph
-- Scrum Master = Gracielle
-- Developer = Krizia
+- Scrum Master = Krizia
+- Developer = Gracielle
 - Developer = J.R
 
 Project Link: https://github.com/rdashnox/JRKGBites

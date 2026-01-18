@@ -83,7 +83,7 @@ fun JRKGBitesApp() {
     )
 
     // State Collection -- this block makes the UI reactive.
-    val sessionState by viewModel.sessionState.collectAsState()
+    val sessionState by viewModel.sessionState.collectAsState(initial = null)
     val requiredAuthMethod by viewModel.requiredAuthMethod.collectAsState()
     val isBiometricPreferenceEnabled by viewModel.isBiometricPreferenceEnabled.collectAsState()
     val topRestaurant = viewModel.deck.collectAsState().value.firstOrNull()
