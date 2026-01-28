@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.jrkg.jrkgbites.LoginFragment"
+        android:label="LoginFragment" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.jrkg.jrkgbites.RegisterFragment"
+        android:label="RegisterFragment" />
+
+    <dialog
+        android:id="@+id/forgotPasswordDialog"
+        android:name="com.jrkg.jrkgbites.ForgotPasswordDialog"
+        android:label="ForgotPasswordDialog"/>
+
+    <action
+        android:id="@+id/to_registerFragment"
+        app:destination="@id/registerFragment">
+    </action>
+
+    <action
+        android:id="@+id/to_loginFragment"
+        app:destination="@id/loginFragment">
+    </action>
+
+    <action
+        android:id="@+id/to_forgotPasswordDialog"
+        app:destination="@id/forgotPasswordDialog">
+    </action>
+
+</navigation>

@@ -7,21 +7,30 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="JRKGBites"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.JRKGBites">
+
         <activity
             android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.JRKGBites">
+
+        </activity>
+
+        <activity
+            android:name=".MainActivity2"
             android:exported="true"
-            android:label="@string/app_name"
+            android:label="JRKGBites"
             android:theme="@style/Theme.JRKGBites">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+
     </application>
 
 </manifest>
