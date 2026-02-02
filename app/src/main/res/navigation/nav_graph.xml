@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.jrkg.jrkgbites.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_favorite"
+        android:name="com.jrkg.jrkgbites.FavoriteFragment"
+        android:label="Favorites"
+        tools:layout="@layout/fragment_favorite" />
+
+    <fragment
+        android:id="@+id/nav_search"
+        android:name="com.jrkg.jrkgbites.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/nav_picker"
+        android:name="com.jrkg.jrkgbites.PickerFragment"
+        android:label="Picker"
+        tools:layout="@layout/fragment_picker" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.jrkg.jrkgbites.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/see_all_favorites"
+        android:name="com.jrkg.jrkgbites.RecentlyAddedFavoriteFragment"
+        android:label="Recently Added"
+        tools:layout="@layout/fragment_see_recently_added" />
+
+    <fragment
+        android:id="@+id/see_all_category"
+        android:name="com.jrkg.jrkgbites.SeeAllRestaurantsFragment"
+        android:label="All Restaurants"
+        tools:layout="@layout/fragment_see_all_restaurants" />
+
+</navigation>
