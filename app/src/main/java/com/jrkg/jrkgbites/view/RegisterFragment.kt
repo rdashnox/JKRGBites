@@ -23,6 +23,8 @@ import kotlinx.coroutines.launch
 import android.text.SpannableString
 import android.text.Spanned
 import android.text.method.LinkMovementMethod
+import android.content.Intent
+import android.net.Uri
 import android.text.style.ClickableSpan
 import android.text.style.ForegroundColorSpan
 import androidx.appcompat.app.AlertDialog
@@ -135,13 +137,15 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
 
         val tcClickable = object : ClickableSpan() {
             override fun onClick(view: View) {
-                showGuidesDialog("Terms and Conditions", "TermsOfService.txt")
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://gracielleee.github.io/JRKG_Terms_and_Conditions/"))
+                startActivity(intent)
             }
         }
 
         val ppClickable = object : ClickableSpan() {
             override fun onClick(view: View) {
-                showGuidesDialog("Privacy Policy", "PrivacyPolicy.txt")
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://gracielleee.github.io/JRKG_Terms_and_Conditions/"))
+                startActivity(intent)
             }
         }
 
@@ -195,21 +199,7 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
         }
     }
 
-    private fun showGuidesDialog(title: String, fileName: String) {
-        try {
-            // Load text from GuidesTexts (should be in assets, but checking directory structure)
-            // User provided path: JKRGBites\AppGuides\GuidesTexts\TermsOfService.txt
-            // In Android, these should ideally be in assets. Assuming they are accessible via assets for now.
-            val content = requireContext().assets.open(fileName).bufferedReader().use { it.readText() }
-            AlertDialog.Builder(requireContext())
-                .setTitle(title)
-                .setMessage(content)
-                .setPositiveButton("OK", null)
-                .show()
-        } catch (e: Exception) {
-            Toast.makeText(requireContext(), "Could not load $title", Toast.LENGTH_SHORT).show()
-        }
-    }
+
 
     private fun onRegisterButtonPressed() {
         val usernameInput = etUsername.text.toString().trim()
